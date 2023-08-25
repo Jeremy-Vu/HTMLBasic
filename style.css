@@ -17,10 +17,10 @@ body {
     display: flex;
     max-width: fit-content;
     align-items: flex-start;
-    /* padding-left: 200px;
-    padding-right: 200px; */
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .logo {
@@ -175,7 +175,7 @@ body {
 }
 
 .right-bar .slider-banner .slide li a img {
-    width: 1000px;
+    width: 100%;
     height: 320px;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .slider-category .title-category {
-    width: 1000px;
+    max-width: 100%;
 }
 
 .slider-category .name-category {
@@ -411,6 +411,10 @@ footer {
     .top-nav {
         display: flex;
     }
+    .main {
+        padding: 0;
+        margin: 0;
+    }
     .left-bar {
         display: none;
     }
@@ -432,8 +436,8 @@ footer {
         display: none;
     }
     .right-bar .slider-banner .slide li a img {
-        width: 415px;
-        height: 167px;
+        max-width: 100%;
+        height: auto;
     }
     .right-bar .slider-banner .slide {
         padding-left: 5px;
@@ -446,6 +450,15 @@ footer {
     .suport-customer {
         padding-left: 0;
         padding-right: 0;
+        clear: both;
+        overflow: hidden;
+        display: block;
+    }
+    .suport-customer .services {
+        display: block;
+    }
+    .suport-customer .services div {
+        width: auto;
     }
     .shop-by-brand {
         margin-left: 0;
@@ -462,5 +475,14 @@ footer {
     .site-footer .container {
         margin: 0;
         display: block;
+    }
+    .right-bar {
+        max-width: 100%;
+    }
+    .slider-category .title-category {
+        max-width: 100%;
+    }
+    .slider-category .category-product {
+        width: 100%;
     }
 }
