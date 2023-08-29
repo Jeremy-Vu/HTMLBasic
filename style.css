@@ -597,4 +597,7 @@ footer {
         border: none;
         max-width: 100%;
     }
+    .content-footer .policy {
+        width: auto;
+    }
 }
